@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+    <title>Music player</title>
+  </head>
+  <body>
+    <h1>Music player</h1>
+    <div class="music-container play">
+      <div class="music-info">
+        <h4 id="title">Color your night</h4>
+        <div class="progress-container">
+          <div class="progress"></div>
+        </div>
+      </div>
+      <audio src="music/Color Your Night.mp3"></audio>
+      <div class="img-container">
+        <img src="styles/images/persona.webp" id="cover" />
+      </div>
+
+      <div class="navigtion">
+        <button id="prev" class="action-btn">
+          <i class="fas fa-backward"></i>
+        </button>
+
+        <button id="play" class="action-btn-big">
+          <i class="fas fa-play"></i>
+        </button>
+
+        <button id="next" class="action-btn">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
