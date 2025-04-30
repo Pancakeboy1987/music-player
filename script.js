@@ -18,3 +18,24 @@ const songs = ['Color Your Night', '1','2']
 
 let songIndex = 2
 
+//initially load song info Dom
+
+loadSong(songs[songIndex])
+
+//update song details
+
+function loadSong(song){
+    title.innerText = song
+    audio.src = `music/${song}.mp3`
+    cover.src = `images/${song}.jpg`
+}
+
+//event listeners
+playBtn.addEventListener('click',()=>{
+    const isPlaying = musicContainer.classList.contains('play');
+    if  (isPlaying){
+        pauseSong()
+    }else{
+        playsong()
+    }
+})
